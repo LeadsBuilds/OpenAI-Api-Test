@@ -15,5 +15,5 @@ class Create:
 
         self.client = udp_client.SimpleUDPClient(args.ip, args.port)
     
-    def sendMessage(self, message: str):
+    def send_message(self, message: str):
         self.client.send_message('/chatbox/input', [message, True])
